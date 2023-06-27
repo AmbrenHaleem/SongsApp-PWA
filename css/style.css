@@ -1,0 +1,265 @@
+*{
+  font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+  margin :0 ;
+  padding : 0;
+  box-sizing: border-box;
+  
+}
+
+section{
+  width : 100%;
+  background: #b98eda;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  min-height: 100vh;
+}
+h2{
+  background-color:#b98eda;
+  color: white;
+  width: 100%;
+  padding: 6px;
+}
+section div{
+  width: 95%;
+  padding : 20px;
+  /* border : 1px solid black; */
+}
+
+.flexHeader{
+  flex: 1;
+  background-color: #ffff;
+  margin-top: 2%;
+}
+
+.flexMain{
+  flex: 6;
+  background-color: #ffff;
+}
+
+.flexFooter{
+  flex: 1;
+  background-color: #ffff;
+  margin-bottom: 2%;
+}
+
+
+/*Header Style start*/
+.header img{
+  float:left;
+  width: 50px;
+  height: 50px;
+  background: #555;
+  margin-right: 12px;
+}
+.header h1{
+  position: relative;
+  font-size: 30px;
+  margin-left: 14px;
+}
+
+/*Header Style end*/
+
+/*Form Style start*/
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;  
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: black;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 20px;
+  max-width: 120px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.flex-outer li {
+  margin: 10px;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #b98eda;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.flex-inner li {
+  width: 100px;
+}
+
+.flex-outer input{
+  padding : 4px;
+}
+
+/* Messages */
+.song-add-success,
+.song-failure {
+display: block;
+background-color: #fff;
+border: solid 7px;
+text-align: center;
+font-size: 27px;
+font-weight: bold;
+padding: 15px;
+margin-bottom: 30px;
+}
+
+.song-add-success {
+border-color: #b98eda;
+color: #b98eda;
+}
+
+.song-failure {
+border-color: #c00;
+color: #c00;
+}
+
+.song-failure span {
+display: block;
+color: #777;
+font-size: 18px;
+font-weight: normal;
+margin-top: 10px;
+}
+
+
+/*Form Style end*/
+
+/*List style*/
+#list-output ul{
+  list-style: none;
+  padding: 0;
+  
+}
+
+#list-output li{
+  padding: 5px 10px;
+  background-color: #e8edfb;
+  border: 1px solid #b98eda;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.titleDiv{
+  padding: 0;
+  margin-top: 5px;
+  font-size: 20px;
+  word-break: break-all;
+}
+
+.likesDiv{
+  padding: 0;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: right;
+}
+.buttonsDiv{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content:space-between;
+}
+
+.buttonsDiv button {
+  display: inline-block;
+  font-size: 0.8rem;
+  width: 80px;
+  height: 35px;
+  margin: 0 10px 0 0;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.buttonsDiv button.update {
+  background-color: #b98eda;
+  margin-top: 0px;
+}
+
+.buttonsDiv button.remove {
+  background-color: #c00;
+  margin-left: 15px;
+  margin-top: 0px;
+}
+
+.artistDiv{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #777;
+  word-break: break-all;
+}
+
+.titleLikesDiv{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width:768) {
+  section{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .song-add-success,
+  .song-failure {
+  border: solid 2px;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 22px;
+  }
+
+  .song-failure span {
+    font-size: 12px;  
+    margin-top: 7px;
+  }
+
+  .header h1{
+   
+    font-size: 3px;
+  }
+}

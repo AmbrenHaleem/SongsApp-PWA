@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music App</title>
+
+    <!-- Page Information  -->
+  <meta charset="UTF-8">
+  <meta name="description" content="An app to keep a list of all your favourites songs.">
+  <meta name="keywords" content="songs, play list, music">
+  <meta name="author" content="Ambreen Haleem">
+
+  <!-- Locks the size of the page on the devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="css/style.css">
+
+   <!-- Link the Web App Manifest -->
+   <link rel="manifest" href="/manifest.json">
+   <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+   <link rel="manifest" href="/icons/site.webmanifest">
+   <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#b98eda">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="msapplication-TileImage" content="/icons/mstile-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+    <section>
+        <div class="flexHeader">
+            <div class="header">
+                <img src="/images/logo.png" alt="My Songs App">
+                <h1>My Music App 1.2</h1>
+            </div>
+        </div>
+
+        <div class="flexMain">
+            <div >
+                <h2>New Song</h2>
+                <form id="song-add-form">
+                    <ul class="flex-outer">
+                        <li>
+                        <label for="song-title">Title</label>
+                        <input type="text" id="song-title" placeholder="Enter song title here">
+                        </li>
+                        <li>
+                        <label for="song-artist">Artist</label>
+                        <input type="text" id="song-artist" placeholder="Enter artist here">
+                        </li>
+                    
+                        <li>
+                        <button type="button" id = "add-button">Add Song</button>
+                        </li>
+                    </ul>
+                </form>
+
+                <h2>List of Songs</h2>
+                <!-- Songs List -->
+                <div id="list-output">
+                    <ul data-role="listview" id="listSongs" data-autodividers="false">
+    
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="flexFooter">
+            Copyright © 2023. All rights reserved.
+        </div>
+    </section>
+    
+    <!-- Include the page script -->
+    <script src="/js/scripts.js" type="module"></script>
+  </body>
+</html>
