@@ -30,21 +30,9 @@ class MusicDB {
       try {
 
         // Your web app's Firebase configuration
-        // const firebaseConfig = {
-        //   apiKey: "AIzaSyCNf4TL5HfQYnWBgwtmlRVakhxGhBgEfeg",
-        //   authDomain: "games-app-5498c.firebaseapp.com",
-        //   projectId: "games-app-5498c",
-        //   storageBucket: "games-app-5498c.appspot.com",
-        //   messagingSenderId: "17358048537",
-        //   appId: "1:17358048537:web:f0fc4c7aa07d4b63aa4988"
-        // };
+        
         const firebaseConfig = {
-            apiKey: "AIzaSyCHTWYhfK7ozTslX9WyzhkvWQvesLBsV0o",
-            authDomain: "music-app-e015b.firebaseapp.com",
-            projectId: "music-app-e015b",
-            storageBucket: "music-app-e015b.appspot.com",
-            messagingSenderId: "647763110692",
-            appId: "1:647763110692:web:ec0e53952b7a093259e1b1"
+           
           };
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
